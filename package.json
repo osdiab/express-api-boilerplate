@@ -2,6 +2,7 @@
   "name": "express-api-boilerplate",
   "version": "0.0.0",
   "description": "Boilerplate for writing pretty Express-based APIs",
+  "license": "MIT",
   "scripts": {
     "dev-server": "nodemon --exec \"babel-node --inspect src\"",
     "build": "babel -d ./build src",
@@ -39,27 +40,27 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-builtin-extend": "^1.1.2",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
+    "babel-preset-env": "^1.7.0",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
-    "express": "^4.16.1",
+    "express": "^4.16.3",
     "express-force-ssl": "^0.3.2",
-    "express-request-language": "^1.1.12",
-    "jsonwebtoken": "^8.0.1",
-    "node-fetch": "^1.7.3"
+    "express-request-language": "^1.1.15",
+    "jsonwebtoken": "^8.3.0",
+    "node-fetch": "^2.2.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.1",
-    "babel-jest": "^21.2.0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "eslint": "^4.8.0",
-    "eslint-config-prettier": "^2.6.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-prettier": "^2.3.1",
-    "jest": "^21.2.1",
-    "nodemon": "^1.12.1",
-    "prettier": "^1.7.3"
+    "eslint": "^5.3.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "jest": "^23.5.0",
+    "nodemon": "^1.18.3",
+    "prettier": "^1.14.2"
   }
 }
