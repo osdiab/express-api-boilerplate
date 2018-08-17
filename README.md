@@ -1,5 +1,12 @@
 # express-api-boilerplate
 
+## NOTE
+
+* Probably shouldn't use JSON web tokens for authention like this project
+  does because they can't be revoked easily.
+
+## Intro
+
 Boilerplate for an API written in Express, based on some previous projects. It includes:
 
 * Documentation and examples on how to use this boilerplate
