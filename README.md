@@ -68,7 +68,7 @@ to standardize coding style and check imports.
 
 ```
 npm run-script lint # shows lint errors
-npm run-script fix-lint # fixes lint errors, shows any remaining
+npm run-script lint:fix # fixes lint errors, shows any remaining
 ```
 
 ### ... the development server
