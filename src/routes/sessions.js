@@ -23,12 +23,12 @@ export const authenticate = route(
       message: "success",
       data: {
         token,
-        user
-      }
+        user,
+      },
     });
   },
   {
-    requiredFields: ["id", "password"]
+    requiredFields: ["id", "password"],
   }
 );
 

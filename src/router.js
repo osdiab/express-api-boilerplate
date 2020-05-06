@@ -8,11 +8,11 @@ import cookieParser from "cookie-parser";
 import { ApplicationError } from "./lib/errors";
 import {
   create as createUserRoute,
-  list as listUsersRoute
+  list as listUsersRoute,
 } from "./routes/users";
 import {
   authenticate as authenticateRoute,
-  verify as verifySessionMiddleware
+  verify as verifySessionMiddleware,
 } from "./routes/sessions";
 
 export default function createRouter() {
@@ -39,7 +39,7 @@ export default function createRouter() {
     res.set({
       "Last-Modified": new Date().toUTCString(),
       Expires: -1,
-      "Cache-Control": "must-revalidate, private"
+      "Cache-Control": "must-revalidate, private",
     });
     next();
   });
@@ -79,7 +79,7 @@ export default function createRouter() {
     if (err instanceof ApplicationError) {
       res.status(err.statusCode).send({
         message: err.message,
-        data: err.data || {}
+        data: err.data || {},
       });
       return;
     }
@@ -89,7 +89,7 @@ export default function createRouter() {
     console.error(err);
 
     res.status(500).send({
-      message: "Uncaught error"
+      message: "Uncaught error",
     }); // uncaught exception
   });
 

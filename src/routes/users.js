@@ -11,7 +11,7 @@ export const create = route(
     res.send({ data: newUser });
   },
   {
-    requiredFields: ["name", "password"]
+    requiredFields: ["name", "password"],
   }
 );
 

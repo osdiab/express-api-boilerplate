@@ -7,11 +7,11 @@ import { ApplicationError } from "../lib/errors";
  * @param {any} body Body of the request
  */
 function assertRequiredFields(requiredFields = [], body) {
-  const missingFields = requiredFields.filter(field => !body[field]);
+  const missingFields = requiredFields.filter((field) => !body[field]);
   if (missingFields.length > 0) {
     throw new ApplicationError("Missing required fields", 400, {
       requiredFields,
-      missingFields
+      missingFields,
     });
   }
 }

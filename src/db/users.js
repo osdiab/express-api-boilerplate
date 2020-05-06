@@ -48,7 +48,7 @@ export class UsersDB {
    * fields. defaults to true
    */
   getUserById = async (id, filterPrivateFields = true) => {
-    const user = this.users.find(user => user.id === id);
+    const user = this.users.find((user) => user.id === id);
     if (!user) {
       return null;
     }
@@ -65,7 +65,7 @@ export class UsersDB {
     // don't return entire users as stored in the database, because
     // we don't want to send password hashes to end users; only
     // return the public fields, as defined above.
-    return this.users.map(user => filterFields(user, PUBLIC_FIELDS));
+    return this.users.map((user) => filterFields(user, PUBLIC_FIELDS));
   };
 
   /**
@@ -77,7 +77,7 @@ export class UsersDB {
     const newUser = {
       id: `${this.currentId++}`, // increment the latest id, use it as a string
       name,
-      passwordHash: await hashPassword(password)
+      passwordHash: await hashPassword(password),
     };
     this.users = this.users.concat(newUser);
     return filterFields(newUser, PUBLIC_FIELDS);

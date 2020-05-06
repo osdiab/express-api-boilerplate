@@ -21,7 +21,7 @@ app.use(createRouter());
 if (isProduction) {
   const sslOptions = {
     key: fs.readFileSync(getEnv("PRIVKEY_CERT_LOC", true)),
-    cert: fs.readFileSync(getEnv("FULLCHAIN_CERT_LOC", true))
+    cert: fs.readFileSync(getEnv("FULLCHAIN_CERT_LOC", true)),
   };
   http.createServer(app).listen(80);
   https.createServer(sslOptions, app).listen(443);

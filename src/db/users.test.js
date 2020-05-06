@@ -27,7 +27,7 @@ describe("list", () => {
     const usersToAdd = [
       { name: "User 0", password: "Password 0" },
       { name: "User 1", password: "Password 1" },
-      { name: "User 2", password: "Password 2" }
+      { name: "User 2", password: "Password 2" },
     ];
     for (const user of usersToAdd) {
       await db.create(user.name, user.password);
@@ -44,7 +44,7 @@ describe("list", () => {
     const usersToAdd = [
       { name: "User 0", password: "Password 0" },
       { name: "User 1", password: "Password 1" },
-      { name: "User 2", password: "Password 2" }
+      { name: "User 2", password: "Password 2" },
     ];
     for (const user of usersToAdd) {
       await db.create(user.name, user.password);
