@@ -1,8 +1,14 @@
 # express-api-boilerplate
 
+## Note from the author: I don't recommend this project!
+- I'm not maintaining this
+- I wrote it when I was a pretty new developer but I'm keeping it here for historical purposes
+- the approaches taken in this project are a combination of things unnecessary with modern tooling
+  and pretty outdated coding patterns. If you find it interesting though feel free to take a look!
+
 ## NOTE
 
-* Probably shouldn't use JSON web tokens for authention like this project
+* Probably shouldn't use JSON web tokens for authentification like this project
   does because they can't be revoked easily.
 
 ## Intro
