@@ -1,5 +1,7 @@
 # express-api-boilerplate
 
+# This project is not maintained.
+
 ## Note from the author: I don't recommend this project!
 - I'm not maintaining this
 - I wrote it when I was a pretty new developer but I'm keeping it here for historical purposes
